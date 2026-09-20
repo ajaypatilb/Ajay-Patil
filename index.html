@@ -1,10 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="theme-color" content="#0a0a0a">
+<meta name="theme-color" content="#070707">
 <meta name="description" content="Ajay Patil - Creator, Gamer & Developer">
 <meta name="author" content="Ajay Patil">
 
@@ -22,54 +23,25 @@ html{
 }
 
 body{
-    font-family:
-        Inter,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Arial,
-        sans-serif;
-
+    font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",
+    Roboto,Arial,sans-serif;
     background:#070707;
-    color:#ffffff;
+    color:#fff;
     line-height:1.6;
     overflow-x:hidden;
 }
-
-/* =========================
-   BACKGROUND
-========================= */
 
 body::before{
     content:"";
     position:fixed;
     inset:0;
     pointer-events:none;
-
     background:
-        radial-gradient(
-            circle at 15% 15%,
-            rgba(80,120,255,0.12),
-            transparent 28%
-        ),
-        radial-gradient(
-            circle at 85% 25%,
-            rgba(130,80,255,0.10),
-            transparent 28%
-        ),
-        radial-gradient(
-            circle at 50% 90%,
-            rgba(0,180,255,0.06),
-            transparent 30%
-        );
-
+        radial-gradient(circle at 15% 15%,rgba(80,120,255,.12),transparent 28%),
+        radial-gradient(circle at 85% 25%,rgba(130,80,255,.10),transparent 28%),
+        radial-gradient(circle at 50% 90%,rgba(0,180,255,.06),transparent 30%);
     z-index:-1;
 }
-
-/* =========================
-   COMMON
-========================= */
 
 .container{
     width:min(1100px,92%);
@@ -106,9 +78,7 @@ section{
     color:#9b9b9b;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+/* NAVBAR */
 
 .navbar{
     position:fixed;
@@ -116,16 +86,12 @@ section{
     left:0;
     width:100%;
     height:72px;
-
     display:flex;
     align-items:center;
-
-    background:rgba(7,7,7,0.72);
+    background:rgba(7,7,7,.72);
     backdrop-filter:blur(18px);
     -webkit-backdrop-filter:blur(18px);
-
-    border-bottom:1px solid rgba(255,255,255,0.07);
-
+    border-bottom:1px solid rgba(255,255,255,.07);
     z-index:1000;
 }
 
@@ -140,7 +106,6 @@ section{
     color:#fff;
     font-size:21px;
     font-weight:800;
-    letter-spacing:-0.5px;
 }
 
 .logo span{
@@ -157,16 +122,14 @@ section{
     text-decoration:none;
     color:#aaa;
     font-size:14px;
-    transition:0.25s;
+    transition:.25s;
 }
 
 .nav-links a:hover{
     color:#fff;
 }
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero{
     min-height:100vh;
@@ -179,27 +142,22 @@ section{
     max-width:850px;
     text-align:center;
     margin:auto;
+    animation:fadeUp .9s ease forwards;
 }
 
 .profile-ring{
     width:105px;
     height:105px;
     margin:0 auto 25px;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     border-radius:50%;
-
     background:
         linear-gradient(#101010,#101010) padding-box,
         linear-gradient(135deg,#8da2ff,#a66cff,#43d9ff) border-box;
-
     border:2px solid transparent;
-
-    box-shadow:
-        0 0 40px rgba(120,130,255,0.15);
+    box-shadow:0 0 40px rgba(120,130,255,.15);
 }
 
 .profile-ring span{
@@ -212,13 +170,10 @@ section{
     display:inline-flex;
     align-items:center;
     gap:8px;
-
     padding:8px 14px;
     border-radius:100px;
-
-    background:rgba(255,255,255,0.05);
-    border:1px solid rgba(255,255,255,0.09);
-
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.09);
     color:#b8b8b8;
     font-size:13px;
     margin-bottom:22px;
@@ -234,19 +189,13 @@ section{
 
 .hero h1{
     font-size:clamp(48px,9vw,86px);
-    line-height:0.98;
+    line-height:.98;
     letter-spacing:-4px;
     margin-bottom:20px;
 }
 
 .gradient-text{
-    background:linear-gradient(
-        90deg,
-        #ffffff,
-        #aebcff,
-        #ffffff
-    );
-
+    background:linear-gradient(90deg,#fff,#aebcff,#fff);
     -webkit-background-clip:text;
     background-clip:text;
     color:transparent;
@@ -261,7 +210,6 @@ section{
 .hero-description{
     max-width:650px;
     margin:auto;
-
     color:#858585;
     font-size:16px;
 }
@@ -279,21 +227,13 @@ section{
     align-items:center;
     justify-content:center;
     gap:9px;
-
     min-height:48px;
     padding:0 21px;
-
     border-radius:12px;
-
     text-decoration:none;
     font-size:14px;
     font-weight:700;
-
-    transition:
-        transform 0.25s,
-        background 0.25s,
-        border 0.25s;
-
+    transition:.25s;
     cursor:pointer;
 }
 
@@ -312,36 +252,28 @@ section{
 
 .btn-secondary{
     color:#fff;
-    background:rgba(255,255,255,0.04);
-    border:1px solid rgba(255,255,255,0.12);
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.12);
 }
 
 .btn-secondary:hover{
-    background:rgba(255,255,255,0.08);
+    background:rgba(255,255,255,.08);
 }
 
-/* =========================
-   ABOUT
-========================= */
+/* ABOUT */
 
 .about-card{
     max-width:850px;
     margin:auto;
-
     padding:35px;
-
     border-radius:22px;
-
-    background:
-        linear-gradient(
-            135deg,
-            rgba(255,255,255,0.055),
-            rgba(255,255,255,0.018)
-        );
-
-    border:1px solid rgba(255,255,255,0.08);
-
-    box-shadow:0 20px 60px rgba(0,0,0,0.25);
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.055),
+        rgba(255,255,255,.018)
+    );
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:0 20px 60px rgba(0,0,0,.25);
 }
 
 .about-card p{
@@ -350,9 +282,7 @@ section{
     text-align:center;
 }
 
-/* =========================
-   SERVICES
-========================= */
+/* SERVICES */
 
 .services-grid{
     display:grid;
@@ -362,35 +292,27 @@ section{
 
 .service-card{
     padding:28px 22px;
-
-    background:rgba(255,255,255,0.035);
-    border:1px solid rgba(255,255,255,0.08);
-
+    background:rgba(255,255,255,.035);
+    border:1px solid rgba(255,255,255,.08);
     border-radius:18px;
-
-    transition:0.3s;
+    transition:.3s;
 }
 
 .service-card:hover{
     transform:translateY(-6px);
-    border-color:rgba(141,162,255,0.35);
-    background:rgba(255,255,255,0.055);
+    border-color:rgba(141,162,255,.35);
+    background:rgba(255,255,255,.055);
 }
 
 .service-icon{
     width:48px;
     height:48px;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     border-radius:14px;
-
-    background:rgba(141,162,255,0.1);
-
+    background:rgba(141,162,255,.1);
     font-size:23px;
-
     margin-bottom:18px;
 }
 
@@ -404,9 +326,7 @@ section{
     font-size:13px;
 }
 
-/* =========================
-   PROJECTS
-========================= */
+/* PROJECTS */
 
 .projects-grid{
     display:grid;
@@ -417,37 +337,28 @@ section{
 .project-card{
     position:relative;
     overflow:hidden;
-
     padding:30px;
-
-    min-height:220px;
-
+    min-height:245px;
     border-radius:22px;
-
-    background:
-        linear-gradient(
-            135deg,
-            rgba(255,255,255,0.055),
-            rgba(255,255,255,0.018)
-        );
-
-    border:1px solid rgba(255,255,255,0.08);
-
-    transition:0.3s;
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.055),
+        rgba(255,255,255,.018)
+    );
+    border:1px solid rgba(255,255,255,.08);
+    transition:.3s;
 }
 
 .project-card:hover{
     transform:translateY(-5px);
-    border-color:rgba(141,162,255,0.32);
+    border-color:rgba(141,162,255,.32);
 }
 
 .project-number{
     position:absolute;
     right:24px;
     top:18px;
-
-    color:rgba(255,255,255,0.06);
-
+    color:rgba(255,255,255,.06);
     font-size:60px;
     font-weight:900;
 }
@@ -470,27 +381,24 @@ section{
 
 .project-tag{
     display:inline-block;
-
     margin-top:20px;
     padding:6px 10px;
-
     border-radius:7px;
-
-    background:rgba(141,162,255,0.09);
+    background:rgba(141,162,255,.09);
     color:#aebaff;
-
     font-size:11px;
     font-weight:700;
 }
 
-/* =========================
-   SOCIAL
-========================= */
+.project-button{
+    margin-top:18px;
+}
+
+/* SOCIAL */
 
 .social-box{
     max-width:700px;
     margin:auto;
-
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:14px;
@@ -499,57 +407,44 @@ section{
 .social-link{
     text-decoration:none;
     color:#fff;
-
     display:flex;
     align-items:center;
     justify-content:center;
     gap:10px;
-
     min-height:60px;
-
     border-radius:15px;
-
-    background:rgba(255,255,255,0.035);
-    border:1px solid rgba(255,255,255,0.08);
-
+    background:rgba(255,255,255,.035);
+    border:1px solid rgba(255,255,255,.08);
     font-weight:700;
     font-size:14px;
-
-    transition:0.25s;
+    transition:.25s;
 }
 
 .social-link:hover{
     transform:translateY(-4px);
-    background:rgba(255,255,255,0.07);
+    background:rgba(255,255,255,.07);
 }
 
 .social-icon{
     font-size:20px;
 }
 
-/* =========================
-   CONTACT
-========================= */
+/* CONTACT */
 
 .contact-card{
     max-width:800px;
     margin:auto;
-
     padding:45px 30px;
-
     text-align:center;
-
     border-radius:25px;
-
     background:
         radial-gradient(
             circle at 50% 0%,
-            rgba(141,162,255,0.12),
+            rgba(141,162,255,.12),
             transparent 50%
         ),
-        rgba(255,255,255,0.035);
-
-    border:1px solid rgba(255,255,255,0.08);
+        rgba(255,255,255,.035);
+    border:1px solid rgba(255,255,255,.08);
 }
 
 .contact-card h2{
@@ -562,17 +457,12 @@ section{
     margin-bottom:25px;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
     padding:35px 0;
-
-    border-top:1px solid rgba(255,255,255,0.07);
-
+    border-top:1px solid rgba(255,255,255,.07);
     text-align:center;
-
     color:#686868;
     font-size:13px;
 }
@@ -581,37 +471,26 @@ footer strong{
     color:#aaa;
 }
 
-/* =========================
-   SCROLL TOP
-========================= */
+/* TOP BUTTON */
 
 .top-button{
     position:fixed;
     right:18px;
     bottom:18px;
-
     width:45px;
     height:45px;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     border-radius:50%;
-
     background:#fff;
     color:#000;
-
     text-decoration:none;
-
     font-size:18px;
     font-weight:bold;
-
     opacity:0;
     pointer-events:none;
-
-    transition:0.3s;
-
+    transition:.3s;
     z-index:999;
 }
 
@@ -620,9 +499,20 @@ footer strong{
     pointer-events:auto;
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* ANIMATION */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* MOBILE */
 
 @media(max-width:800px){
 
@@ -714,34 +604,12 @@ footer strong{
         padding:35px 20px;
     }
 }
-
-/* =========================
-   ANIMATION
-========================= */
-
-@keyframes fadeUp{
-    from{
-        opacity:0;
-        transform:translateY(20px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-.hero-content{
-    animation:fadeUp 0.9s ease forwards;
-}
 </style>
 </head>
 
 <body id="top">
 
-<!-- =========================
-     NAVBAR
-========================= -->
+<!-- NAVBAR -->
 
 <header class="navbar">
     <div class="container nav-inner">
@@ -763,9 +631,7 @@ footer strong{
 </header>
 
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
 <main>
 
@@ -781,7 +647,7 @@ footer strong{
 
             <div class="badge">
                 <span class="badge-dot"></span>
-                Available for new opportunities
+                Creator & Digital Builder
             </div>
 
             <h1>
@@ -802,22 +668,22 @@ footer strong{
 
             <div class="hero-buttons">
 
-                <!-- CHANGE THIS LINK -->
+                <!-- INSTAGRAM -->
                 <a
-                    href="YOUR_YOUTUBE_LINK"
+                    href="https://www.instagram.com/ajay_patil_2221/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn btn-primary"
                 >
-                    ▶ YouTube
+                    ◎ Instagram
                 </a>
 
-                <!-- CHANGE THIS LINK -->
+                <!-- YOUTUBE - ADD YOUR LINK LATER -->
                 <a
-                    href="YOUR_INSTAGRAM_LINK"
-                    target="_blank"
+                    href="#contact"
                     class="btn btn-secondary"
                 >
-                    ◎ Instagram
+                    ▶ YouTube
                 </a>
 
                 <a
@@ -836,9 +702,7 @@ footer strong{
 </section>
 
 
-<!-- =========================
-     ABOUT
-========================= -->
+<!-- ABOUT -->
 
 <section id="about">
 
@@ -874,9 +738,7 @@ footer strong{
 </section>
 
 
-<!-- =========================
-     WHAT I DO
-========================= -->
+<!-- WHAT I DO -->
 
 <section id="services">
 
@@ -893,7 +755,6 @@ footer strong{
             </p>
 
         </div>
-
 
         <div class="services-grid">
 
@@ -967,9 +828,7 @@ footer strong{
 </section>
 
 
-<!-- =========================
-     PROJECTS
-========================= -->
+<!-- PROJECTS -->
 
 <section id="projects">
 
@@ -982,7 +841,7 @@ footer strong{
             <h2>Projects I'm building.</h2>
 
             <p>
-                A few digital projects I'm working on.
+                A few digital projects I've created and worked on.
             </p>
 
         </div>
@@ -990,6 +849,8 @@ footer strong{
 
         <div class="projects-grid">
 
+
+            <!-- PROJECT 1 -->
 
             <div class="project-card">
 
@@ -1013,8 +874,23 @@ footer strong{
                     WEB PROJECT
                 </span>
 
+                <div class="project-button">
+
+                    <a
+                        href="https://ajaypatilb.github.io/task-reward-system/index.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-secondary"
+                    >
+                        Live Project →
+                    </a>
+
+                </div>
+
             </div>
 
+
+            <!-- PROJECT 2 -->
 
             <div class="project-card">
 
@@ -1023,23 +899,38 @@ footer strong{
                 </div>
 
                 <div class="project-icon">
-                    🏠
+                    💻
                 </div>
 
-                <h3>Rent Management System</h3>
+                <h3>My First Project</h3>
 
                 <p>
-                    A digital management system designed to
-                    simplify tenant, rent, payment and
-                    security-deposit management.
+                    One of my early web projects, created as part
+                    of my journey into website development and
+                    digital creation.
                 </p>
 
                 <span class="project-tag">
                     WEB PROJECT
                 </span>
 
+                <div class="project-button">
+
+                    <a
+                        href="https://ajaypatilb.github.io/my-first-project/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-secondary"
+                    >
+                        Live Project →
+                    </a>
+
+                </div>
+
             </div>
 
+
+            <!-- PROJECT 3 -->
 
             <div class="project-card">
 
@@ -1064,6 +955,8 @@ footer strong{
 
             </div>
 
+
+            <!-- PROJECT 4 -->
 
             <div class="project-card">
 
@@ -1095,9 +988,7 @@ footer strong{
 </section>
 
 
-<!-- =========================
-     SOCIAL
-========================= -->
+<!-- SOCIAL -->
 
 <section>
 
@@ -1118,21 +1009,12 @@ footer strong{
 
         <div class="social-box">
 
-            <!-- CHANGE LINK -->
-            <a
-                href="YOUR_YOUTUBE_LINK"
-                target="_blank"
-                class="social-link"
-            >
-                <span class="social-icon">▶</span>
-                YouTube
-            </a>
+            <!-- INSTAGRAM -->
 
-
-            <!-- CHANGE LINK -->
             <a
-                href="YOUR_INSTAGRAM_LINK"
+                href="https://www.instagram.com/ajay_patil_2221/"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="social-link"
             >
                 <span class="social-icon">◎</span>
@@ -1140,13 +1022,25 @@ footer strong{
             </a>
 
 
-            <!-- CHANGE EMAIL -->
+            <!-- YOUTUBE -->
+
             <a
-                href="mailto:YOUR_EMAIL@example.com"
+                href="#contact"
+                class="social-link"
+            >
+                <span class="social-icon">▶</span>
+                YouTube
+            </a>
+
+
+            <!-- EMAIL - ADD EMAIL LATER -->
+
+            <a
+                href="#contact"
                 class="social-link"
             >
                 <span class="social-icon">✉</span>
-                Email
+                Contact
             </a>
 
         </div>
@@ -1156,9 +1050,7 @@ footer strong{
 </section>
 
 
-<!-- =========================
-     CONTACT
-========================= -->
+<!-- CONTACT -->
 
 <section id="contact">
 
@@ -1167,19 +1059,21 @@ footer strong{
         <div class="contact-card">
 
             <h2>
-                Have an idea?
+                Let's connect.
             </h2>
 
             <p>
-                Let's connect and build something interesting.
+                Follow my journey, explore my projects and
+                stay connected with me.
             </p>
 
-            <!-- CHANGE EMAIL -->
             <a
-                href="mailto:YOUR_EMAIL@example.com"
+                href="https://www.instagram.com/ajay_patil_2221/"
+                target="_blank"
+                rel="noopener noreferrer"
                 class="btn btn-primary"
             >
-                Get In Touch →
+                Connect on Instagram →
             </a>
 
         </div>
@@ -1191,9 +1085,7 @@ footer strong{
 </main>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -1210,9 +1102,7 @@ footer strong{
 </footer>
 
 
-<!-- =========================
-     TOP BUTTON
-========================= -->
+<!-- TOP BUTTON -->
 
 <a
     href="#top"
@@ -1226,18 +1116,13 @@ footer strong{
 
 <script>
 
-/* Current Year */
-
 document.getElementById("year").textContent =
     new Date().getFullYear();
-
-
-/* Back To Top Button */
 
 const topButton =
     document.getElementById("topButton");
 
-window.addEventListener("scroll", function(){
+window.addEventListener("scroll",function(){
 
     if(window.scrollY > 400){
         topButton.classList.add("show");
@@ -1250,4 +1135,5 @@ window.addEventListener("scroll", function(){
 </script>
 
 </body>
-  </html>
+</html>
+```
